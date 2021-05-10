@@ -17,17 +17,19 @@
 }
 #upnav a {
     text-decoration: none;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     vertical-align: middle;
 
 }
 #googlelogo {
-    display: block;
+    display: flex;
     margin-left: auto;
     margin-right: auto;
     margin-top: 15em;
     text-align: center;
     width: 28%;
+    max-width: 300px;
+    min-width: 300px;
 }
 form {
     display: block;
@@ -44,28 +46,53 @@ form {
     margin: 30px 0px;
     border-radius: 25px;
     border: 1px darkgray solid;
-    display: flex;
-    flex: 1;
     background: url(/images/searchicon.png) no-repeat 13px 11px;
-    box-sizing: content-box;
     background-size: 20px;
     font-size: 16px;
+    padding-left: 50px;
+    box-shadow: 0 0 3px 3px rgb(32 33 36 / 5%);
+
 }
 
 input:focus, textarea {
     outline: none !important;
+
 }
+
+.button {
+    border-radius: 3px;
+    border: none;
+    margin: 10px;
+    padding: 10  10 10 10;
+    background-color: rgba(243, 243, 243, 0.842);
+}
+
+.button:hover {
+    border: 3px;
+    box-shadow: royalblue;
+}
+
 
 #footer {
     position: absolute;
-    bottom: 20;
-    left: 30;
-    width: 90%;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(196, 189, 189, 0.25);
+    line-height: 4em;
 }
 #footer li {
     display: inline;
     list-style-type: none;
-    margin: 5px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0 20px;
+}
+
+#footer a {
+    font-family: Arial;
+    font-size: 14px;
+    text-decoration: none;
 }
 .lowright {
     list-style-type: none;
