@@ -2,6 +2,9 @@ a {
     text-decoration: none;
     color:black;
 }
+#upnav li a:hover {
+    text-decoration: underline;
+}
 #upnav {
     margin-top: 20;
     margin-left: 20;
@@ -9,6 +12,7 @@ a {
 }
 #upnav li {
     display: inline;
+    vertical-align: middle;
     width: 100%;
     list-style-type: none;
     margin: 5px;
@@ -78,12 +82,8 @@ input:focus, textarea {
 }
 
 .button:hover {
-        background: #d4d4d4;
-        border: 1px;
-        -webkit-box-shadow: 0px 5px 5px -10px rgba(219, 219, 219, 0.57);
-        -moz-box-shadow: 0px 5px 40px -10px rgba(211, 211, 211, 0.57);
-        box-shadow: 5px 40px -10px rgba(182, 182, 182, 0.57);
-        transition: all 0.1s ease 0s;
+    color: black;
+    border: solid rgb(206, 206, 207) .5px;
         
 }
 
@@ -102,6 +102,10 @@ input:focus, textarea {
     margin-left: 0px;
     margin-right: 0px;
     padding: 0 20px;
+}
+
+#footer li a:hover {
+    text-decoration: underline;
 }
 
 #footer a {
